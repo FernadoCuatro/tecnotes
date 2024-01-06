@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577820021494",
+    "project_id": "tecnotedb",
+    "storage_bucket": "tecnotedb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577820021494:android:26f1f1ee9d4717b19b12d7",
+        "android_client_info": {
+          "package_name": "com.fmcuatro.agenda_online"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAII9zVubg2Q417Vxo6nvM0kQipdAb83Mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

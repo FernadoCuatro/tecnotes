@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarNota.ActualizarNota">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvIdNotaEn"
+            android:hint="@string/idNotaEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvUidUsuarioEn"
+            android:hint="@string/UidUsuarioEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCorreoUsuarioEn"
+            android:hint="@string/CorreoUsuarioEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/worksans"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFechaHoraActualEn"
+            android:hint="@string/FechaHoraActualEn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:fontFamily="@font/worksans"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTareaFinalizada"
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#16A085"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTareaNoFinalizada"
+                android:visibility="gone"
+                android:layout_marginStart="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#E74C3C"/>
+
+            <TextView
+                android:id="@+id/tvEstadoEn"
+                android:textSize="20sp"
+                android:fontFamily="@font/worksans"
+                android:text="@string/EstadoEn"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/edtTituloEn"
+            android:hint="@string/TituloEn"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/worksans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtDescripcionEn"
+            android:hint="@string/DescripcionEn"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:minHeight="150dp"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:fontFamily="@font/worksans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_calendarioEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_CalerndarioEn"
+                app:icon="@drawable/icono_calendario" />
+
+            <TextView
+                android:id="@+id/tvFechaEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/FechaEn"
+                android:textSize="20sp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/worksans" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spEstadoNuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tvEstadoNuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/EstadoNuevoEn"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

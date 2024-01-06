@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- se reemplaza el constraintlayout por un relative -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla_De_Carga">
+
+    <!-- un linearLayout -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+        <!-- llamamos a la animacion -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="calendario.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true">
+        </com.airbnb.lottie.LottieAnimationView>
+        
+        <!-- colocamos el nombre de la aplicacion -->
+        <TextView
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            android:fontFamily="@font/worksans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

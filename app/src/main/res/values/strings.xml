@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">TecNotes</string>
+
+    <!-- identificadores para el Main Activity -->
+    <string name="btn_login">Login</string>
+    <string name="btn_registro">Registro</string>
+
+    <!-- identificadores para el Registro = Rg -->
+    <string name="CrearCuentaRg">Crear una cuenta</string>
+    <string name="NombresRg">Nombre Completo</string>
+    <string name="CorreoRg">Correo Electrónico</string>
+    <string name="ContraseniaRg">Contraseña</string>
+    <string name="ConfirmarContraseniaRg">Confirmar Contraseña</string>
+    <string name="RegistrarUsuarioRg">Registrar</string>
+    <string name="TengoCuentaRg">Tengo una cuenta</string>
+
+    <!-- identificadores para el Menu principal = Mp -->
+    <string name="CerrarSesionMp">Salir</string>
+    <string name="BienvenidoPrincipalMp">¡Hola!</string>
+    <string name="NombresPrincipalMp">--</string>
+    <string name="CorreoPrincipalMp">--</string>
+    <string name="AgregarNotasMp">Agregar</string>
+    <string name="ListarNotasMp">Mis notas</string>
+    <string name="ImportantesMp">Importantes</string>
+    <string name="PerfilMp">Perfil</string>
+    <string name="AcercaDeMp">Acerca De</string>
+    <string name="UidPrincipalMp">UidPrincipalMp</string>
+    <string name="EstadoCuentaMp">No verificado</string>
+
+    <!-- identificadores para el Login = Lg -->
+    <string name="IniciarSesionLg">Iniciar Sesión</string>
+    <string name="CorreoLg">Correo electrónico</string>
+    <string name="PassLg">Contraseña</string>
+    <string name="btn_ingresaLg">Ingresar</string>
+    <string name="UsuarioNuevoLg">¿No tienes una cuenta? Registrate</string>
+
+    <!-- identificadores para el Agregar Nota = An -->
+    <string name="UidUsuarioAn">Uid del usuario</string>
+    <string name="CorreoUsuarioAn">Correo del Usuario</string>
+    <string name="FechaHoraActualTextoAn">Fecha de registro: </string>
+    <string name="FechaHoraActualAn">Fecha y Hora Actual</string>
+    <string name="TituloAn">Título</string>
+    <string name="DescripcionAn">Descripción</string>
+    <string name="btn_CalerndarioAn">Calendario</string>
+    <string name="FechaAn">00/00/0000</string>
+    <string name="EstadoAn">No Finalizado</string>
+
+    <!-- identificadores para el Menu = Mn -->
+    <string name="AgregarNotaMn">Agregar</string>
+
+    <!-- identificadores para el item nota = In -->
+    <string name="IdNotaIn">Id Nota</string>
+    <string name="UidUsuarioIn">Uid del usuario</string>
+    <string name="CorreoUsuarioIn">Correo del Usuario</string>
+    <string name="FechaHoraRegistroIn">Fecha y Hora registro</string>
+    <string name="TituloIn">Título</string>
+    <string name="DescripcionIn">Descripción</string>
+    <string name="FechaIn">00/00/0000</string>
+    <string name="EstadoIn">No Finalizado</string>
+
+    <!-- identificadores para el item nota Importante = Ni -->
+    <string name="IdNotaNi">Id Nota</string>
+    <string name="UidUsuarioNi">Uid del usuario</string>
+    <string name="CorreoUsuarioNi">Correo del Usuario</string>
+    <string name="FechaHoraRegistroNi">Fecha y Hora registro</string>
+    <string name="TituloNi">Título</string>
+    <string name="DescripcionNi">Descripción</string>
+    <string name="FechaNi">00/00/0000</string>
+    <string name="EstadoNi">No Finalizado</string>
+
+    <!-- identificadores para el cuadro de dialogo = Cd -->
+    <string name="ElijaOpcionCd">Elija opción</string>
+    <string name="EliminarCd">Eliminar</string>
+    <string name="ActualizarCd">Actualizar</string>
+
+    <!-- identificadores para Actualizar Nota = En -->
+    <string name="idNotaEn">ID nota</string>
+    <string name="UidUsuarioEn">Uid del usuario</string>
+    <string name="CorreoUsuarioEn">Correo del Usuario</string>
+    <string name="FechaHoraActualEn">Fecha y Hora de Registro</string>
+    <string name="TituloEn">Título</string>
+    <string name="DescripcionEn">Descripción</string>
+    <string name="btn_CalerndarioEn">Calendario</string>
+    <string name="FechaEn">00/00/0000</string>
+    <string name="EstadoEn">No Finalizado</string>
+    <string name="EstadoNuevoEn">--</string>
+    <!-- arreglo para el spinner -->
+    <string-array name="estadosNota">
+        <item>"No Finalizado"</item>
+        <item>"Finalizado"</item>
+    </string-array>
+
+    <!-- identificadores para el Menu Editar = Me -->
+    <string name="EditarNotaMe">Editar</string>
+
+    <!-- identificadores para el detalle nota = Dn -->
+    <string name="IdNotaTexotDn">ID nota: </string>
+    <string name="IdNotaDn">ID nota</string>
+    <string name="IdUsuarioTextoDn">ID usuario: </string>
+    <string name="IdUsuarioaDn">ID usuario</string>
+    <string name="CorreoTextoDn">Correo electrónico: </string>
+    <string name="CorreoDn">Correo</string>
+    <string name="TituloTextoDn">Título: </string>
+    <string name="TituloDn">Titulo</string>
+    <string name="DescripcionTextoDn">Descripción: </string>
+    <string name="DescripcionDn">Descripción</string>
+    <string name="FechaRegistroTextoDn">Fecha de registro: </string>
+    <string name="FechaRegistroDn">Fecha Registro</string>
+    <string name="FechaNotaTextoDn">Fecha Nota: </string>
+    <string name="FechaNotaDn">Fecha Nota</string>
+    <string name="EstadoTextoDn">Estado de la nota:</string>
+    <string name="EstadoDn">Estado</string>
+    <string name="ImportanteDn">Importante</string>
+
+    <!-- identificadores para el cuadro de dialogo cuenta verificada = Cv -->
+    <string name="CuentaVerificadaTextoCv">Cuenta verificada</string>
+    <string name="EntendidoVerificadoCv">¡Excelente!</string>
+
+    <!-- identificadores para la informacion de la aplicacion = Ip -->
+    <string name="TecnotesIp">TecNotes</string>
+    <string name="DesarrolladorPorIp">Participantes</string>
+    <string name="AgradecimientoIp">Fue desarrollador por nosotros con apoyo del curso de Udemy, sumando nuestro valor agregado.</string>
+    <string name="VersionIp">Versión: 1.0</string>
+    <string name="EntendidoIp">De acuerdo</string>
+
+    <!-- identificadores para el perfil del usuario = Pu -->
+    <string name="uidPerfilPu">uid</string>
+    <string name="nombrePu">Nombres</string>
+    <string name="correoPu">correo</string>
+    <string name="edadPu">Edad</string>
+    <string name="telefonoPu">Teléfono</string>
+    <string name="CreacionoPu">Creación</string>
+    <string name="AuthPu">Autenticación</string>
+    <string name="domicilioPu">Domicilio</string>
+    <string name="universidadPu">Universidad</string>
+    <string name="profesionPu">Profesión</string>
+    <string name="guardarPU">Guardar datos</string>
+
+</resources>

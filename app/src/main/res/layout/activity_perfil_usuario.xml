@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil.PerfilUsuario">
+
+    <!-- contiene la portada y la imagen del perfil  -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/portada"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="#354f60"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagen_perfil"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="120dp"/>
+
+        </RelativeLayout>
+
+        <!-- datos del usuario -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <!-- correo -->
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/worksans"
+                android:layout_marginTop="5dp"
+                android:text="@string/correoPu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- uid -->
+            <TextView
+                android:id="@+id/tvUid"
+                android:text="@string/uidPerfilPu"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:drawableStart="@drawable/icono_id_usuario_dn"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/worksans"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- nombres -->
+            <EditText
+                android:id="@+id/edtNombres"
+                android:inputType="textPersonName"
+                android:hint="@string/nombrePu"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- edad -->
+            <EditText
+                android:id="@+id/edtEdad"
+                android:inputType="number"
+                android:hint="@string/edadPu"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- telefono -->
+            <EditText
+                android:id="@+id/edtTelefono"
+                android:inputType="phone"
+                android:hint="@string/telefonoPu"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- domicilio -->
+            <EditText
+                android:id="@+id/edtDomicilio"
+                android:inputType="text"
+                android:hint="@string/domicilioPu"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- universidad -->
+            <EditText
+                android:id="@+id/edtUniversidad"
+                android:inputType="text"
+                android:hint="@string/universidadPu"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- profesion -->
+            <EditText
+                android:id="@+id/edtProfesion"
+                android:inputType="text"
+                android:hint="@string/profesionPu"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <!-- fecha creacion -->
+            <TextView
+                android:id="@+id/tvFechaCreacion"
+                android:textSize="15sp"
+                android:fontFamily="@font/worksans"
+                android:layout_marginTop="5dp"
+                android:text="@string/CreacionoPu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- fecha autenticacion -->
+            <TextView
+                android:id="@+id/tvFechaAuth"
+                android:textSize="15sp"
+                android:fontFamily="@font/worksans"
+                android:layout_marginTop="5dp"
+                android:text="@string/AuthPu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- boton de guardar -->
+            <Button
+                android:id="@+id/btn_guardar_perfil"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/guardarPU"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:padding="0.2dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- le pertenece al icono que se va a crear-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:src="@drawable/icono_item_nota"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="7dp">
+
+            <TextView
+                android:id="@+id/tvIdNota"
+                android:text="@string/IdNotaIn"
+                android:fontFamily="@font/worksans"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvUidUsuario"
+                android:text="@string/UidUsuarioAn"
+                android:fontFamily="@font/worksans"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvCorreoUsuario"
+                android:text="@string/CorreoUsuarioAn"
+                android:fontFamily="@font/worksans"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvFechaHoraRegistro"
+                android:text="@string/FechaHoraRegistroIn"
+                android:fontFamily="@font/worksans"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:text="@string/TituloIn"
+                android:fontFamily="@font/worksans"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:text="@string/DescripcionIn"
+                android:fontFamily="@font/worksans"
+                android:textSize="18sp"
+                android:height="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:text="@string/FechaIn"
+                android:fontFamily="@font/worksans"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivTareaFinalizadaIn"
+                    android:visibility="gone"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:background="#16A085"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivTareaNoFinalizadaIn"
+                    android:visibility="gone"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:background="#E74C3C"/>
+
+                <TextView
+                    android:id="@+id/tvEstado"
+                    android:text="@string/EstadoIn"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/worksans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

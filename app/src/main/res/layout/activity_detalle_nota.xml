@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detalle.DetalleNota">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- detalle de la nota -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!-- id nota -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_id_nota_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/IdNotaTexotDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvIdNotaDn"
+                android:text="@string/IdNotaDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- id usuario -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_id_usuario_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/IdUsuarioTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvIdUsuarioDn"
+                android:text="@string/IdUsuarioaDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Correo electrónico -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_correo_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/CorreoTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvCorreoDn"
+                android:text="@string/CorreoDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- titulo -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_titulo_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/TituloTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvTituloDn"
+                android:text="@string/TituloDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- descripción -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_descripcion_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/DescripcionTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvDescripcionDn"
+                android:text="@string/DescripcionDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <!-- fecha registro -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_fecha_registro_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/FechaRegistroTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvFechaRegistroDn"
+                android:text="@string/FechaRegistroDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- fecha nota -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_fecha_nota_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/FechaNotaTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvFechaNotaDn"
+                android:text="@string/FechaNotaDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- estado -->
+            <!-- contiene un icono y un textview -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- icono -->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/icono_estado_dn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"/>
+
+                <!-- texto -->
+                <TextView
+                    android:text="@string/EstadoTextoDn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!-- se almacena el dato -->
+            <TextView
+                android:id="@+id/tvEstadoDn"
+                android:text="@string/EstadoDn"
+                android:fontFamily="@font/worksans"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- boton importante -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#34495E">
+
+            <Button
+                android:id="@+id/btnImportante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans"
+                android:drawableTop="@drawable/icono_nota_no_importante"
+                android:textColor="#ffffff"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@android:color/transparent"
+                android:text="@string/ImportanteDn"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
